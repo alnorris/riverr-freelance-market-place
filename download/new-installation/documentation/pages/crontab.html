@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Documentation | Riverr</title>
+        <link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
+		<link href="../dist/app.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<style>
+			html {
+			font-family: 'Heebo', sans-serif !important;
+			}
+		</style>
+	</head>
+	<body class="h-full">
+		<div>
+
+			<!-- Sidebar -->
+			<div class="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
+				<div class="border-r border-gray-200 pt-5 flex flex-col flex-grow bg-white overflow-y-auto">
+
+					<!-- Logo -->
+					<div class="flex-shrink-0 px-4 flex items-center">
+						<img class="h-8 w-auto" src="../assets/logo.svg" alt="Riverr">
+					</div>
+
+					<!-- Menu -->
+					<div class="flex-grow mt-8 flex flex-col">
+						<nav class="flex-1 px-2 pb-4 space-y-1">
+							<!-- Get started -->
+							<a href="../index.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+								</svg>
+								Get started
+							</a>
+							<!-- Installation -->
+							<a href="./install.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/>
+								</svg>
+								Installation
+							</a>
+							<!-- Cron Jobs -->
+							<a href="./crontab.html" class="bg-gray-50 text-gray-900 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+								</svg>
+								Cron Jobs
+							</a>
+							<!-- Facebook Login -->
+							<a href="./facebook.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+								</svg>
+								Facebook Login
+							</a>
+							<!-- Twitter Login -->
+							<a href="./twitter.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+								</svg>
+								Twitter Login
+							</a>
+							<!-- Google Login -->
+							<a href="./google.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+								</svg>
+								Google Login
+							</a>
+							<!-- Linkedin Login -->
+							<a href="./linkedin.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+								</svg>
+								Linkedin Login
+							</a>
+							<!-- Github Login -->
+							<a href="./github.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+								</svg>
+								Github Login
+							</a>
+							<!-- Stripe -->
+							<a href="./stripe.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+								</svg>
+								Stripe
+							</a>
+							<!-- Paypal -->
+							<a href="./paypal.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+								</svg>
+								PayPal
+							</a>
+							<!-- reCaptcha -->
+							<a href="./recaptcha.html" class="hover:bg-gray-50 hover:text-gray-900 text-gray-600 group rounded-md py-2 px-2 flex items-center text-sm font-medium tracking-wide">
+								<svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 mr-4 flex-shrink-0 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+								</svg>
+								reCaptcha
+							</a>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+
+            <!-- Content -->
+			<div class="md:pl-64">
+				<div class="max-w-4xl mx-auto flex flex-col md:px-8 xl:px-0">
+
+                    <!-- Section header -->
+					<div class="sticky top-0 z-10 flex-shrink-0 h-16 bg-white flex">
+						<div class="flex-1 flex justify-between px-4 md:px-0">
+							<div class="flex-1 flex">
+							</div>
+                            <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+
+                                <!-- Get Riverr -->
+                                <a href="https://codecanyon.net/user/edwardhendrix" target="_blank" class="inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none">
+                                    <svg version="1.1" class="-ml-1 mr-2 h-5 w-5 fill-gray-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 469.926 469.926" xml:space="preserve"><g><g><path d="M438.944,216.574c-12.048-12.555-25.979-22.758-40.645-31.887c-1.341-0.871-1.813-1.745-2.146-3.288c-2.252-10.136-1.343-20.408-1.378-30.61c-0.134-21.012,0.067-42.023-0.134-62.965c-0.203-15.508-12.018-27.322-27.523-28.126c-0.939-0.067-1.879-0.067-2.817-0.067c-52.293,0-104.551,0-156.811,0.067c-5.502,0-10.606-1.613-15.842-2.754c-18.761-4.027-36.852-10.203-55.043-16.111c-4.733-1.543-9.6-2.618-14.366-3.894c-1.208,0-2.451,0-3.658,0c0.302,0.673,0.436,1.476,0.906,2.082c4.968,6.243,10.002,12.485,15.037,18.728c0.404,0.538,0.805,1.073,1.41,1.879c-1.143,0-1.881,0-2.686,0c-27.455,0-54.977,0-82.5,0c-14.902,0-26.615,9.733-29.065,24.031c-0.334,1.88-0.403,3.758-0.403,5.707c0,23.83-0.034,47.66,0.035,71.558c0,1.745-0.471,2.685-2.014,3.422c-2.218,1.073-4.33,2.35-6.411,3.757c2.685-0.131,5.403-0.332,8.39-0.538c0,0.805,0,1.479,0,2.082c0,8.996-0.034,17.991,0,26.917c0.035,1.343-0.402,2.217-1.511,2.953c-3.859,2.686-7.652,5.305-11.377,8.056c-2.886,2.148-5.604,4.364-8.39,6.579c0,0.269,0,0.539,0,0.806c6.342,1.274,12.686,2.617,19.031,3.825c1.778,0.334,2.282,1.14,2.282,2.953c-0.035,33.766-0.035,67.463-0.035,101.229c0,26.916-0.034,53.903,0,80.885c0,14.433,9.465,25.979,23.428,28.599c1.879,0.398,3.893,0.537,5.838,0.537c104.921,0,209.841,0,314.827,0c16.512,0,29-11.953,29.267-28.396c0.269-16.445,0.064-32.825,0.064-49.203c0-19.536,0-39.071,0-58.672c0-0.804,0-1.541,0-2.481c6.747,1.343,12.352,4.23,16.614,9.332c7.015,8.255,13.931,16.579,20.878,24.971c3.523,4.297,6.98,8.66,10.539,13.021c1.039,1.211,2.248,2.218,3.491,3.424c0.368-0.47,0.602-0.602,0.706-0.871c5.704-12.287,11.646-24.302,17.049-36.785c2.383-5.505,4.096-11.683,5.304-17.653c1.544-7.585,0.033-15.306-1.711-22.758C462.976,247.315,452.706,230.87,438.944,216.574z M455.055,298.803c-1.944,10.003-3.824,19.936-8.29,29.402c-0.672-1.476-1.311-2.953-2.047-4.361c-5.103-10.067-11.683-19.066-18.528-27.991c-6.311-8.188-14.431-13.828-23.226-18.797c-17.487-9.87-36.08-17.249-54.877-24.166c-0.336-0.132-0.74-0.201-1.176-0.064c11.847,6.445,23.695,12.891,35.577,19.334c-0.104,0.199-0.201,0.468-0.301,0.67c-6.68-1.81-13.461-3.422-20.072-5.501c-10.37-3.091-7.219-1.611-31.015-8.795c-43.127-11.748-50.008-3.961-50.008-3.961c41.516,4.362,49.707,12.956,71.12,24.033c-1.072,2.815-2.081,5.571-3.088,8.323c-1.543,4.159-3.055,8.321-4.7,12.48c-1.007,2.62-0.873,5.037,0.102,7.655c8.56,22.354,17.486,44.704,25.979,67.061c0.47,1.208,0.739,2.616,0.839,3.894v38.462c-0.065,0.738-0.065,1.611-0.401,2.352c0,0.065-0.104,0.133-0.136,0.202c-3.76,4.427-8.456,5.436-14.263,5.436c-69.612-0.201-139.22-0.064-208.799-0.064c-33.262,0-66.523,0-99.751-0.067c-1.678,0-3.423-0.069-5.034-0.338c-7.787-1.275-12.384-6.779-12.889-15.572c-0.167-3.76,0-7.52,0-11.344c0-0.473,0.201-1.01,0.436-1.478c8.559-16.648,15.205-34.101,21.783-51.555c0.502-1.341,1.008-2.616,1.411-4.026c-5.907,11.009-14.298,19.869-23.226,28.262c-0.268-0.067-0.504-0.137-0.737-0.201c0.369-5.504,0.437-11.076,1.208-16.581c3.02-21.681,6.243-43.362,9.396-65.046c0-0.133-0.066-0.268-0.2-0.804c-3.289,10.874-6.511,21.416-9.7,31.886c-0.101,0-0.235,0-0.369,0c0-1.072,0-2.083,0-3.091c0-20.205-0.033-40.343,0-60.545c0-1.212,0.269-2.555,0.804-3.628c4.564-10.064,9.265-20.07,13.895-30.072c1.277-2.685,0.335-5.232-2.55-5.907c-4.7-1.006-9.397-1.811-14.096-2.548c-3.021-0.539-6.042-0.807-9.6-1.212c1.142-0.737,1.88-1.205,2.619-1.742c23.562-15.643,44.572-34.101,63.099-55.517c0.938-1.073,2.718-2.148,1.746-3.961c-0.906-1.676-2.887-1.409-4.396-1.074c-5.976,1.277-11.916,2.686-17.857,4.231c-2.854,0.672-5.605,1.677-8.56,2.281c20.642-17.519,41.284-35.041,62.16-52.761C99.413,89.577,81.656,77.292,63.902,65.008c0.066-0.201,0.135-0.335,0.201-0.537c34.47,6.108,68.94,12.15,103.912,18.258c-10.74-11.612-21.111-22.823-31.817-34.369c0.872,0.201,1.343,0.269,1.745,0.402c35.409,11.815,70.751,23.697,106.194,35.308c33.899,11.076,66.053,25.844,95.388,46.317c11.85,8.258,22.592,17.79,30.945,29.669c4.128,5.907,7.385,12.219,8.862,19.401c0.1,0.538-0.202,1.61-0.635,1.88c-2.888,1.61-4.869,4.027-6.411,6.847c-2.755,5.168-4.132,10.675-3.896,16.514c0.136,3.222-1.072,4.901-4.362,4.901c-2.686,0-5.406-0.268-7.987-0.942c-3.425-0.871-6.781-2.148-10.173-3.287c-0.571-0.134-1.074-0.334-1.644-0.538c7.45,4.834,15.037,9.13,24.031,9.935c3.892,0.334,7.854,0.065,11.009-2.819c1.042-0.939,1.442-1.88,0.873-3.356c-1.613-4.297-0.473-8.055,2.75-11.278c1.144-1.139,2.082-1.343,3.626-0.472c15.169,9.13,29.199,19.601,41.62,32.222c7.251,7.317,13.659,15.239,19.03,24.102C455.794,267.322,458.211,282.557,455.055,298.803z"/><path d="M254.378,188.716c-5.502-0.872-11.007-1.879-16.478-3.018c-1.343-0.27-1.981-0.068-2.754,1.073c-1.947,2.752-4.834,3.624-8.055,3.019c-2.953-0.536-5.504-2.281-5.773-5.235c-0.235-2.953-1.946-3.291-4.026-3.828c-0.673-0.131-1.345-0.268-1.947-0.537c-1.007-0.469-1.678-0.132-2.416,0.673c-4.766,5.571-6.646,11.946-5.036,19.196c2.349,10.673,12.553,18.193,24.433,18.193c0.068,0.133,0.102,0.333,0.135,0.538c3.457-0.871,7.05-1.343,10.271-2.686c10.404-4.163,16.078-14.297,14.231-24.703C256.694,189.788,256.159,189.05,254.378,188.716z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <span>Get Riverr</span>
+                                </a>
+
+                                <!-- Contact us -->
+                                <a href="https://wa.me/17168156032" target="_blank" class="inline-flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none">
+                                    <svg class="-ml-1 mr-2 h-5 w-5 fill-gray-400" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path fill-rule="nonzero" d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z"/> </g></svg>
+                                    <span>Contact us on WhatsApp</span>
+                                </a>
+
+                            </div>
+						</div>
+					</div>
+
+                    <!-- Section body -->
+					<main class="flex-1">
+						<div class="py-6">
+							<div class="px-4 sm:px-6 md:px-0">
+								<h1 class="text-2xl font-semibold text-gray-900">Cron Jobs</h1>
+							</div>
+							<div class="px-4 sm:px-6 md:px-0">
+								<div class="py-4">
+									
+                                    <div class="text-gray-400 font-normal text-base">
+
+                                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                                            <div class="flex">
+                                            <div class="flex-shrink-0">
+                                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="text-sm text-yellow-700">
+                                                    If you are having problems understanding or configuring this section, you can just contact us and we will assist you.
+                                                </p>
+                                            </div>
+                                            </div>
+                                        </div><br><br>
+
+  
+                                        This step is very important, you can do it later if you want. In order for Riverr to work completely, we have to run some tasks in the background, such as sending users notifications, checking for unavailable users and others more.<br><br>
+
+                                        First of all you have to get path to <b class="text-gray-700">php binary</b> on your server, you can use the following command on terminal if you have ssh access or contact your server provider to give it to you.<br><br>
+
+                                        <kbd class="mx-1.5 px-2 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">whereis php</kbd> or <kbd class="mx-1.5 px-2 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">which php</kbd><br><br>
+
+                                        It may look like these suggestions:<br><br>
+                                        <ul class="list-disc text-xs text-gray-500 pl-4">
+                                            <li>/usr/bin/php</li>
+                                            <li>/usr/local/php80/bin/php</li>
+                                        </ul><br>
+
+                                        These are just suggestions, you need to get right path.<br><br>
+
+                                        Now let's assume that you have the right path to php binary and let's say it's <kbd class="mx-1.5 px-2 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/usr/bin/php</kbd><br>
+
+                                        Now we have to get path to where you have installed Riverr on your server, and let's say it's <kbd class="mx-1.5 px-2 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/home/username/your-website.com</kbd><br><br>
+
+                                        <!-- Task scheduling -->
+                                        <code class="block text-xs text-[#BFC7D5] bg-[#292D3E] px-4 leading-6 py-3 mb-6"><span class="text-amber-500">* * * * *</span> cd <kbd class="px-1 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/home/username/your-website.com</kbd> && <kbd class="px-1 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/usr/bin/php</kbd> artisan <span class="text-amber-500">schedule:run</span> >> /dev/null 2>&1</code>
+
+                                        <!-- Queue -->
+                                        <code class="block text-xs text-[#BFC7D5] bg-[#292D3E] px-4 leading-6 py-3"><span class="text-amber-500">* * * * *</span> cd <kbd class="px-1 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/home/username/your-website.com</kbd> && <kbd class="px-1 py-0.5 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">/usr/bin/php</kbd> artisan <span class="text-amber-500">queue:work --stop-when-empty</span> >> /dev/null 2>&1</code><br><br>
+
+                                        <h2 class="text-black text-base font-bold tracking-wider">Using SSH</h2><br>
+
+                                        <ul class="space-y-8 list-inside text-gray-500 dark:text-gray-400 text-sm">
+                                            <li class="block items-center mb-8">
+                                                <div class="flex items-center">
+                                                    <svg class="w-5 h-5 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                    <div>
+                                                        Open your terminal and login then copy the following command and paste it in your terminal
+                                                    </div>
+                                                </div>
+                                                <kbd class="ml-6 inline-flex mt-4 px-2 py-3 text-xs font-semibold text-gray-800 bg-gray-100 rounded-sm leading-[17px]">crontab -e</kbd>
+                                            </li>
+
+                                            <li class="block items-center mb-8">
+                                                <div class="flex items-center">
+                                                    <svg class="w-5 h-5 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                    <div>
+                                                        Copy the two lines of code above and paste them in your terminal then save the file
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul><br><br>
+
+                                        <h2 class="text-black text-base font-bold tracking-wider">From cPanel</h2><br>
+
+                                        <ul class="space-y-8 list-inside text-gray-500 dark:text-gray-400 text-sm">
+                                            <li class="grid items-center">
+                                                <div class="flex items-center">
+                                                    <svg class="w-5 h-5 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                    <div>
+                                                        Log in to cPanel, scroll down to the Advanced section and click the Cron Jobs icon.
+                                                    </div>
+                                                </div>
+                                                <img src="../images/56.png" alt="" class="max-h-96 max-w-full border-4 border-gray-100 rounded-md mt-6 ml-6">
+                                            </li>
+    
+                                            <li class="grid items-center">
+                                                <div class="flex items-center">
+                                                    <svg class="w-5 h-5 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                    <div>
+                                                       Select "Once Per Minute (* * * * *)" and set the first command line above
+                                                    </div>
+                                                </div>
+                                                <img src="../images/57.png" alt="" class="max-h-96 max-w-full border-4 border-gray-100 rounded-md mt-6 ml-6">
+                                            </li>
+    
+                                            <li class="grid items-center">
+                                                <div class="flex items-center">
+                                                    <svg class="w-5 h-5 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                                    <div>
+                                                       Create another cron job and set the second command line
+                                                    </div>
+                                                </div>
+                                                <img src="../images/58.png" alt="" class="max-h-96 max-w-full border-4 border-gray-100 rounded-md mt-6 ml-6">
+                                            </li>
+                                            
+                                        </ul>
+
+
+                                    </div>
+
+
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
