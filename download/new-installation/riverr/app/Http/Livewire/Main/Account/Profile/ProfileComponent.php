@@ -140,7 +140,7 @@ class ProfileComponent extends Component
             // Upload avatar
             $avatar_id = ImageUploader::make($this->avatar)
                                       ->deleteById(auth()->user()->avatar_id)
-                                      ->resize(100)
+                                      ->resize(500)
                                       ->folder('avatars')
                                       ->handle();
 
@@ -275,7 +275,7 @@ class ProfileComponent extends Component
 
             throw $th;
 
-        } 
+        }
     }
 
 
@@ -295,13 +295,13 @@ class ProfileComponent extends Component
             $is_exists = UserSkill::where('user_id', auth()->id())->where('name', $this->add_skill['name'])->first();
 
             if ($is_exists) {
-                
+
                 // Error
                 $this->dispatchBrowserEvent('alert',[
                     "message" => __('messages.t_add_skill_already_exists'),
                     "type"    => "error"
                 ]);
-                
+
                 // Return
                 return;
 
@@ -411,13 +411,13 @@ class ProfileComponent extends Component
                                   ->first();
 
             if ($is_exists) {
-                
+
                 // Error
                 $this->dispatchBrowserEvent('alert',[
                     "message" => __('messages.t_add_skill_already_exists'),
                     "type"    => "error"
                 ]);
-                
+
                 // Return
                 return;
 
@@ -485,7 +485,7 @@ class ProfileComponent extends Component
             $is_exists = UserLanguage::where('user_id', auth()->id())->where('name', $this->add_language['name'])->first();
 
             if ($is_exists) {
-                
+
                 // Error
                 $this->dispatchBrowserEvent('alert',[
                     "message" => __('messages.t_add_language_already_exists'),
@@ -494,7 +494,7 @@ class ProfileComponent extends Component
 
                 // Reload select2
                 $this->reloadSelect2();
-                
+
                 // Return
                 return;
 
@@ -618,7 +618,7 @@ class ProfileComponent extends Component
                                   ->first();
 
             if ($is_exists) {
-                
+
                 // Error
                 $this->dispatchBrowserEvent('alert',[
                     "message" => __('messages.t_add_language_already_exists'),
@@ -627,7 +627,7 @@ class ProfileComponent extends Component
 
                 // Reload select2
                 $this->reloadSelect2();
-                
+
                 // Return
                 return;
 
@@ -773,7 +773,7 @@ class ProfileComponent extends Component
 
             // Check if date in future
             if (!$availability_date->isFuture()) {
-                
+
                 // Error
                 $this->dispatchBrowserEvent('alert',[
                     "message" => __('messages.t_pls_select_availability_date_in_future'),
@@ -853,5 +853,5 @@ class ProfileComponent extends Component
             $this->dispatchBrowserEvent('refresh');
         }
     }
-    
+
 }

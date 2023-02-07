@@ -3,7 +3,7 @@
 
         {{-- Preview --}}
         <a href="{{ url('service', $gig->slug) }}" class="flex items-center justify-center overflow-hidden w-full h-52 bg-gray-100 dark:bg-zinc-700">
-            <img class="object-contain max-h-52 w-full" src="{{ src($gig->thumbnail) }}" alt="{{ $gig->title }}">
+            <img class="object-contain max-h-52 w-full" src="{{ src($gig->owner->avatar) }}" alt="{{ $gig->title }}">
         </a>
 
         {{-- Gig content --}}
@@ -20,6 +20,8 @@
                         <div class="ltr:ml-3 rtl:mr-3">
                             <div class="text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 flex items-center mb-0.5">
                                 <span class="font-extrabold tracking-wide text-[13px]">{{ $gig->owner->username }}</span>
+                                <br />
+                                <span class="font-extrabold tracking-wide text-[13px]">{{ $gig->owner->headline }}</span>
                                 @if ($gig->owner->status === 'verified')
                                     <svg data-tooltip-target="tooltip-account-verified-{{ $gig->uid }}" class="ltr:ml-0.5 rtl:mr-0.5" width="14px" height="14px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="web-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="check-verified" fill="#26abff"> <path d="M4.25203497,14 L4,14 C2.8954305,14 2,13.1045695 2,12 C2,10.8954305 2.8954305,10 4,10 L4.25203497,10 C4.44096432,9.26595802 4.73145639,8.57268879 5.10763818,7.9360653 L4.92893219,7.75735931 C4.1478836,6.97631073 4.1478836,5.70998077 4.92893219,4.92893219 C5.70998077,4.1478836 6.97631073,4.1478836 7.75735931,4.92893219 L7.9360653,5.10763818 C8.57268879,4.73145639 9.26595802,4.44096432 10,4.25203497 L10,4 C10,2.8954305 10.8954305,2 12,2 C13.1045695,2 14,2.8954305 14,4 L14,4.25203497 C14.734042,4.44096432 15.4273112,4.73145639 16.0639347,5.10763818 L16.2426407,4.92893219 C17.0236893,4.1478836 18.2900192,4.1478836 19.0710678,4.92893219 C19.8521164,5.70998077 19.8521164,6.97631073 19.0710678,7.75735931 L18.8923618,7.9360653 C19.2685436,8.57268879 19.5590357,9.26595802 19.747965,10 L20,10 C21.1045695,10 22,10.8954305 22,12 C22,13.1045695 21.1045695,14 20,14 L19.747965,14 C19.5590357,14.734042 19.2685436,15.4273112 18.8923618,16.0639347 L19.0710678,16.2426407 C19.8521164,17.0236893 19.8521164,18.2900192 19.0710678,19.0710678 C18.2900192,19.8521164 17.0236893,19.8521164 16.2426407,19.0710678 L16.0639347,18.8923618 C15.4273112,19.2685436 14.734042,19.5590357 14,19.747965 L14,20 C14,21.1045695 13.1045695,22 12,22 C10.8954305,22 10,21.1045695 10,20 L10,19.747965 C9.26595802,19.5590357 8.57268879,19.2685436 7.9360653,18.8923618 L7.75735931,19.0710678 C6.97631073,19.8521164 5.70998077,19.8521164 4.92893219,19.0710678 C4.1478836,18.2900192 4.1478836,17.0236893 4.92893219,16.2426407 L5.10763818,16.0639347 C4.73145639,15.4273112 4.44096432,14.734042 4.25203497,14 Z M9,10 L7,12 L11,16 L17,10 L15,8 L11,12 L9,10 Z" id="Shape"></path> </g> </g></svg>
                                     <div id="tooltip-account-verified-{{ $gig->uid }}" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-xs font-medium text-white bg-gray-900 rounded-sm shadow-sm opacity-0 tooltip dark:bg-gray-700">
@@ -55,7 +57,7 @@
                 <div class="ltr:ml-2 rtl:mr-2 text-[13px] font-normal text-gray-400">
                     ( {{ number_format($gig->counter_reviews) }} )
                 </div>
-                
+
             </div>
 
         </div>
@@ -88,7 +90,7 @@
                     @guest
                         <i class="mdi mdi-heart text-gray-400 hover:text-gray-500 text-lg"></i>
                     @endguest
-                    
+
                 </button>
                 <div id="tooltip-add-to-favorites-{{ $gig->uid }}" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-xs font-medium text-white bg-gray-900 rounded-sm shadow-sm opacity-0 tooltip dark:bg-gray-700">
                     @if ($favorite)
@@ -105,7 +107,7 @@
                 <small class="text-body-3 dark:!text-zinc-200">{{ __('messages.t_starting_at') }}</small>
                 <span class=" ltr:text-right rtl:text-left dark:!text-white">@money($gig->price, settings('currency')->code, true)</span>
             </div>
-            
+
         </div>
 
     </div>
@@ -113,7 +115,7 @@
 </div>
 
 @push('scripts')
-    
+
     {{-- AlpineJs --}}
     <script>
         function _{{ $gig->uid }}() {

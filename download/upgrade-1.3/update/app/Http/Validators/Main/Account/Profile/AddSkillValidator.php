@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Validator;
 class AddSkillValidator
 {
     
+    // create for othr tw
     /**
      * Validate form
      *
